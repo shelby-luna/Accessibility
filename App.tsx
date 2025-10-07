@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { ImageUploader } from './components/ImageUploader';
 import { AltTextViewer } from './components/AltTextViewer';
@@ -44,8 +43,8 @@ const App: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
             AI Alt Text Generator
           </h1>
-          <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-            Improve web accessibility effortlessly. Upload an image to generate descriptive alt text using Gemini.
+          <p className="mt-2 text-lg text-slate-400 max-w-2xl mx-auto">
+            An accessibility tool by Northwest Shoals Community College.
           </p>
         </header>
 
@@ -64,6 +63,19 @@ const App: React.FC = () => {
         </main>
 
         <footer className="text-center mt-12 text-slate-500">
+          <img
+            src="https://nwscc.edu/wp-content/uploads/2024/03/NWSCC_PRIMARY_FCOD_ON-DARK-BACKGROUND-01.png"
+            alt="Northwest Shoals Community College Logo"
+            className="mx-auto mb-6 h-20"
+          />
+          <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-4">
+            <a href="https://www.nwscc.edu" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+              nwscc.edu
+            </a>
+            <a href="https://nwscc.edu/explore-programs/virtual-learning/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+              Distance Education
+            </a>
+          </div>
           <p>Powered by Google Gemini</p>
         </footer>
       </div>
