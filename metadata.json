@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Alt Text Generator",
+  "description": "An AI-powered tool to generate descriptive alt text for images, improving web accessibility. Simply upload an image and let Gemini provide a concise and accurate description.",
+  "requestFramePermissions": []
+}
