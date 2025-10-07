@@ -62,18 +62,20 @@ const App: React.FC = () => {
           />
         </main>
 
-        <footer className="text-center mt-12 text-slate-500">
+        <footer className="text-center mt-12 text-slate-400">
           <img
             src="https://nwscc.edu/wp-content/uploads/2024/03/NWSCC_PRIMARY_FCOD_ON-DARK-BACKGROUND-01.png"
             alt="Northwest Shoals Community College Logo"
             className="mx-auto mb-6 h-20"
           />
           <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-4">
-            <a href="https://www.nwscc.edu" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+            <a href="https://www.nwscc.edu" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded px-1">
               nwscc.edu
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
-            <a href="https://nwscc.edu/explore-programs/virtual-learning/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+            <a href="https://nwscc.edu/explore-programs/virtual-learning/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded px-1">
               Distance Education
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
           <p>Powered by Google Gemini</p>

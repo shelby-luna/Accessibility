@@ -48,9 +48,10 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageSelect, ima
       <div className="text-center">
         <UploadIcon className="w-12 h-12 mx-auto text-slate-500 mb-4" />
         <p className="text-slate-300">
-          <span className="font-semibold text-cyan-400 cursor-pointer" onClick={handleBrowseClick}>Click to upload</span> or drag and drop
+          <button type="button" className="font-semibold text-cyan-400 hover:underline focus:outline-none focus:ring-2 focus:ring-cyan-500 rounded" onClick={handleBrowseClick}>Click to upload</button>
+          {' '}or drag and drop
         </p>
-        <p className="text-xs text-slate-500 mt-1">PNG, JPG, GIF, WEBP</p>
+        <p className="text-xs text-slate-400 mt-1">PNG, JPG, GIF, WEBP</p>
       </div>
       <input
         ref={fileInputRef}
@@ -58,6 +59,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageSelect, ima
         accept="image/*"
         className="hidden"
         onChange={handleFileChange}
+        aria-label="Upload an image"
       />
     </div>
   );
@@ -71,7 +73,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageSelect, ima
       />
       <button
         onClick={onReset}
-        className="absolute top-3 right-3 p-1.5 bg-black/60 rounded-full text-slate-200 hover:bg-black/80 hover:text-white transition-all duration-200 opacity-0 group-hover:opacity-100 focus:opacity-100"
+        className="absolute top-3 right-3 p-1.5 bg-black/60 rounded-full text-slate-200 hover:bg-black/80 hover:text-white transition-all duration-200 opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-cyan-500"
         aria-label="Remove image"
       >
         <XCircleIcon className="w-6 h-6" />
